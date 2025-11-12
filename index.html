@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <base target="_self">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ÉLÉGANCE | Luxury Fashion</title>
+    <meta name="description" content="Discover timeless luxury fashion and exquisite craftsmanship from ÉLÉGANCE, where sophistication meets modern elegance.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Lora&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        gold: "#D4AF37",
+                        primary: "#000000",
+                        secondary: "#FFFFFF"
+                    },
+                    fontFamily: {
+                        'heading': ['Playfair Display', 'serif'],
+                        'body': ['Lora', 'serif']
+                    },
+                    animation: {
+                        'fade-in': 'fadeIn 0.8s ease-in-out',
+                        'slide-up': 'slideUp 0.6s ease-out'
+                    },
+                    keyframes: {
+                        fadeIn: {
+                            '0%': { opacity: '0' },
+                            '100%': { opacity: '1' }
+                        },
+                        slideUp: {
+                            '0%': { transform: 'translateY(20px)', opacity: '0' },
+                            '100%': { transform: 'translateY(0)', opacity: '1' }
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="min-h-screen bg-white font-body text-black">
+
+    <!-- Header/Navbar -->
+    <header class="fixed w-full bg-white/95 backdrop-blur-sm z-50 border-b border-gray-100">
+        <nav class="container mx-auto px-6 py-4 flex items-center justify-between">
+            <!-- Logo -->
+            <a href="#home" class="text-2xl font-heading font-bold tracking-wider">ÉLÉGANCE</a>
+            
+            <!-- Desktop Navigation -->
+            <div class="hidden md:flex items-center space-x-8">
+                <a href="#home" class="text-sm uppercase tracking-wider hover:text-gold transition-colors duration-300">Home</a>
+                <a href="#collections" class="text-sm uppercase tracking-wider hover:text-gold transition-colors duration-300">Collections</a>
+                <a href="#about" class="text-sm uppercase tracking-wider hover:text-gold transition-colors duration-300">About</a>
+                <a href="#contact" class="text-sm uppercase tracking-wider hover:text-gold transition-colors duration-300">Contact</a>
+            </div>
+
+            <!-- Mobile Menu Button -->
+            <button class="md:hidden text-black">
+                <i class="fas fa-bars text-xl"></i>
+            </button>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="relative h-screen flex items-center justify-center overflow-hidden">
+        <div class="absolute inset-0">
+            <img 
+                src="veludod.png" 
+                alt="Luxury fashion collection featuring elegant evening wear and accessories" 
+                class="w-full h-full object-cover"
+                loading="eager"
+            />
+            <div class="absolute inset-0 bg-black/40"></div>
+        </div>
+        
+        <div class="relative z-10 text-center text-white px-6 animate-fade-in">
+            <h1 class="text-4xl md:text-6xl lg:text-7xl font-heading font-bold mb-6">
+                Timeless Elegance
+            </h1>
+            <p class="text-lg md:text-xl mb-8 max-w-2xl mx-auto">
+                Where craftsmanship meets contemporary luxury in every stitch
+            </p>
+            <button class="bg-gold text-black px-8 py-3 uppercase tracking-wider text-sm font-medium hover:bg-gold/90 transition-all duration-300 transform hover:scale-105">
+                Shop Now
+            </button>
+        </div>
+    </section>
+
+    <!-- Collections Section -->
+    <section id="collections" class="py-20 bg-white">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-heading font-bold mb-4">Our Collections</h2>
+                <p class="text-gray-600 max-w-2xl mx-auto">Discover our curated selection of luxury pieces crafted with unparalleled attention to detail</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Collection Item 1 -->
+                <div class="group relative overflow-hidden bg-white border border-gray-100 hover:shadow-xl transition-all duration-500">
+                    <div class="overflow-hidden">
+                        <img 
+                            src="collection.png" 
+                            alt="Elegant evening gown collection" 
+                            class="w-full h-80 object-cover group-hover:scale-105 transition-transform duration-500"
+                            loading="lazy"
+                        />
+                    </div>
+                    <div class="p-6">
+                        <h3 class="font-heading text-xl font-bold mb-2">Evening Collection</h3>
+                        <p class="text-gray-600 mb-4">Exquisite gowns for the modern sophisticate</p>
+                        <div class="opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                            <p class="text-gold font-medium mb-2">From $1,200</p>
+                            <button class="text-sm uppercase tracking-wider border border-black px-4 py-2 hover:bg-black hover:text-white transition-colors duration-300">
+                                View Collection
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Collection Item 2 -->
+                <div class="group relative overflow-hidden bg-white border border-gray-100 hover:shadow-xl transition-all duration-500">
+                    <div class="overflow-hidden">
+                        <img 
+                            src="daywear.png" 
+                            alt="Luxury daywear collection" 
+                            class="w-full h-80 object-cover group-hover:scale-105 transition-transform duration-500"
+                            loading="lazy"
+                        />
+                    </div>
+                    <div class="p-6">
+                        <h3 class="font-heading text-xl font-bold mb-2">Daywear Collection</h3>
+                        <p class="text-gray-600 mb-4">Sophisticated pieces for everyday luxury</p>
+                        <div class="opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                            <p class="text-gold font-medium mb-2">From $800</p>
+                            <button class="text-sm uppercase tracking-wider border border-black px-4 py-2 hover:bg-black hover:text-white transition-colors duration-300">
+                                View Collection
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Collection Item 3 -->
+                <div class="group relative overflow-hidden bg-white border border-gray-100 hover:shadow-xl transition-all duration-500">
+                    <div class="overflow-hidden">
+                        <img 
+                            src="acessories.png" 
+                            alt="Premium accessories collection" 
+                            class="w-full h-80 object-cover group-hover:scale-105 transition-transform duration-500"
+                            loading="lazy"
+                        />
+                    </div>
+                    <div class="p-6">
+                        <h3 class="font-heading text-xl font-bold mb-2">Accessories</h3>
+                        <p class="text-gray-600 mb-4">The perfect finishing touches</p>
+                        <div class="opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                            <p class="text-gold font-medium mb-2">From $350</p>
+                            <button class="text-sm uppercase tracking-wider border border-black px-4 py-2 hover:bg-black hover:text-white transition-colors duration-300">
+                                View Collection
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-20 bg-gray-50">
+        <div class="container mx-auto px-6">
+            <div class="max-w-4xl mx-auto">
+                <h2 class="text-3xl md:text-4xl font-heading font-bold mb-8 text-center">Our Heritage</h2>
+                <div class="prose prose-lg mx-auto text-gray-700">
+                    <p class="mb-6">
+                        Founded in 1995, ÉLÉGANCE emerged from a vision to redefine luxury fashion through uncompromising craftsmanship and timeless design. Our journey began in a small Parisian atelier, where every stitch told a story of passion and precision.
+                    </p>
+                    <p class="mb-6">
+                        Today, we continue to honor our heritage while embracing innovation, creating pieces that transcend trends and become cherished heirlooms. Each collection is a testament to our commitment to excellence, using only the finest materials sourced from around the world.
+                    </p>
+                    <p class="mb-6">
+                        Our designers draw inspiration from art, architecture, and the natural world, blending traditional techniques with contemporary sensibilities to create fashion that speaks to the modern connoisseur.
+                    </p>
+                    <p class="text-gold font-medium">
+                        Excellence is not an act, but a habit.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="py-20 bg-white">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl md:text-4xl font-heading font-bold mb-12 text-center">As Seen In</h2>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
+                <!-- Testimonial 1 -->
+                <div class="text-center p-8 border border-gray-100 hover:border-gold transition-colors duration-300">
+                <div class="text-gold text-4xl mb-4">"</div>
+                <p class="text-gray-600 mb-4 italic">
+                    "ÉLÉGANCE redefines modern luxury with their impeccable attention to detail and timeless designs."
+                </p>
+                <p class="text-sm uppercase tracking-wider text-gray-500">VOGUE</p>
+            </div>
+
+            <!-- Testimonial 2 -->
+            <div class="text-center p-8 border border-gray-100 hover:border-gold transition-colors duration-300">
+                <div class="text-gold text-4xl mb-4">"</div>
+                <p class="text-gray-600 mb-4 italic">
+                    "The craftsmanship is extraordinary - each piece feels like a work of art."
+                </p>
+                <p class="text-sm uppercase tracking-wider text-gray-500">HARPER'S BAZAAR</p>
+            </div>
+
+            <!-- Testimonial 3 -->
+            <div class="text-center p-8 border border-gray-100 hover:border-gold transition-colors duration-300">
+                <div class="text-gold text-4xl mb-4">"</div>
+                <p class="text-gray-600 mb-4 italic">
+                    "A perfect blend of tradition and innovation that sets new standards in luxury fashion."
+                </p>
+                <p class="text-sm uppercase tracking-wider text-gray-500">ELLE</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="contact" class="bg-black text-white py-16">
+        <div class="container mx-auto px-6">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <!-- Brand -->
+                <div class="lg:col-span-2">
+                    <h3 class="text-2xl font-heading font-bold mb-4">ÉLÉGANCE</h3>
+                    <p class="text-gray-400 mb-6 max-w-md">
+                    Crafting timeless luxury fashion since 1995. Experience the art of sophisticated dressing.
+                    </p>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-gray-400 hover:text-gold transition-colors duration-300">
+                            <i class="fab fa-instagram text-xl"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-gold transition-colors duration-300">
+                            <i class="fab fa-facebook-f text-xl"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-gold transition-colors duration-300">
+                            <i class="fab fa-pinterest text-xl"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-gold transition-colors duration-300">
+                            <i class="fab fa-twitter text-xl"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Contact Info -->
+                <div>
+                    <h4 class="font-heading text-lg font-bold mb-4">Contact</h4>
+                    <div class="space-y-2 text-gray-400">
+                        <p>123 Avenue Montaigne</p>
+                        <p>75008 Paris, France</p>
+                        <p>+33 1 45 62 78 90</p>
+                        <p>contact@elegance.com</p>
+                    </div>
+                </div>
+
+                <!-- Newsletter -->
+                <div>
+                    <h4 class="font-heading text-lg font-bold mb-4">Newsletter</h4>
+                    <p class="text-gray-400 mb-4">Subscribe for exclusive updates</p>
+                    <div class="flex">
+                        <input 
+                            type="email" 
+                            placeholder="Your email" 
+                            class="bg-gray-800 text-white px-4 py-2 w-full focus:outline-none focus:ring-2 focus:ring-gold"
+                        />
+                        <button class="bg-gold text-black px-4 py-2 hover:bg-gold/90 transition-colors duration-300">
+                            <i class="fas fa-arrow-right"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="border-t border-gray-800 mt-12 pt-8 text-center text-gray-400">
+                <p>&copy; 2024 ÉLÉGANCE. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Navigation smooth scroll
+        document.querySelectorAll('nav a').forEach(link => {
+            link.addEventListener('click', function(e) {
+                e.preventDefault();
+                const targetId = this.getAttribute('href').substring(1);
+                const targetSection = document.getElementById(targetId);
+                if (targetSection) {
+                    window.scrollTo({
+                        top: targetSection.offsetTop - 80, // ajusta para header fixo
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+
+        // Mobile menu toggle (placeholder)
+        const mobileMenuButton = document.querySelector('button.md\\:hidden');
+        mobileMenuButton.addEventListener('click', function() {
+            alert('Mobile menu would open here');
+        });
+
+        // Newsletter subscription
+        const newsletterForm = document.querySelector('footer button');
+        newsletterForm.addEventListener('click', function() {
+            const emailInput = this.previousElementSibling;
+            if (emailInput.value && emailInput.value.includes('@')) {
+                alert('Thank you for subscribing to our newsletter!');
+                emailInput.value = '';
+            } else {
+                alert('Please enter a valid email address.');
+            }
+        });
+
+        // Scroll animations
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver(function(entries) {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('animate-slide-up');
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('section').forEach(section => {
+            observer.observe(section);
+        });
+    </script>
+</body>
+</html>
